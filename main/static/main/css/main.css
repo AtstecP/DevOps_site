@@ -1,0 +1,165 @@
+body {
+    background: #E3E2DF;
+    min-height: 100%;
+}
+
+/*
+.list_menu {
+    float: left;
+    background: #69BDBA;
+    width: 15%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #111;
+    border-right: 5px solid #0B0C10;
+    left: -100px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list_menu img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+}
+
+.list_menu h3 {
+    color: #111;
+    margin-top: 50px;
+    font-size: 30px
+}
+
+.list_menu a {
+    color: #111;
+    text-decoration: none;
+}
+
+.list_menu ul {
+    list-style: none;
+}
+
+main {
+    text-align: center;
+}
+
+.list_menu li {
+    font-weight: 500;
+    font-size: 20px;
+    color: #111;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+}
+
+.list_menu ul li:hover, aside ul a:hover {
+    color: #AC3B61;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+*/
+
+.list_menu ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.list_menu ul li:hover, aside ul a:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.menu img {
+    background: #69BDBA;
+    color: #111;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+}
+
+.title h1 {
+    font-size: 40px;
+    color: #fcfffc;
+    margin-bottom: 50px;
+}
+
+.list_menu a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #fcfffc;
+    transition: 0.2s ease;
+    padding-left: 5px;
+}
+
+.list_menu a:hover {
+    transition: 0.2s ease;
+    padding-left: 10px;
+}
+
+.list_menu li {
+    transition: transform .6s ease;
+    margin: 20px 0;
+}
+
+.list_menu {
+    margin-bottom: 10px;
+}
+
+.menu {
+    padding: 50px;
+    background: #69BDBA;
+    height: 100vh;
+    border-right: 7px solid #111;
+    position: fixed;
+    left: -370px;
+    transition: 0.4s ease;
+}
+
+.menu:hover {
+    left: 0;
+    transition: 0.5s ease;
+}
+
+
+header {
+    float:right;
+    text-align: right;
+    letter-spacing: 8px;
+    height: 6em;
+    padding: 1em 5%;
+    background: #111;
+    color: #fff;
+}
+
+.head_img  {
+    padding: 400px;
+    float: left;
+    display: block;
+    margin: 0 auto;
+    width:25px;
+    height: auto;
+}
+
+.footer {
+    font-weight: lighter;
+    text-align: center;
+    background: #111;
+    padding-top: 10px;
+    margin-top: auto;
+    color: #fff;
+}
+
+.page {
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.main {
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+    padding-left: 100px;
+}
