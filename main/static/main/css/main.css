@@ -1,5 +1,6 @@
 body {
-    background: #E3E2DF;
+    /*background: #E3E2DF;*/
+    /*background: #69BDBA;*/
     min-height: 100%;
 }
 
@@ -62,6 +63,7 @@ main {
 */
 
 .list_menu ul {
+    padding-top: 100px;
     text-decoration: none;
     list-style: none;
 }
@@ -74,6 +76,7 @@ main {
 .menu img {
     background: #69BDBA;
     color: #111;
+    float: top;
     display: block;
     margin: 0 auto;
     width: 150px;
@@ -88,7 +91,7 @@ main {
 
 .list_menu a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #fcfffc;
     transition: 0.2s ease;
     padding-left: 5px;
@@ -100,6 +103,7 @@ main {
 }
 
 .list_menu li {
+    /*font-family: Monaco, serif;*/
     transition: transform .6s ease;
     margin: 20px 0;
 }
@@ -112,19 +116,20 @@ main {
     padding: 50px;
     background: #69BDBA;
     height: 100vh;
-    border-right: 7px solid #111;
+    border-right: 4px solid #111;
     position: fixed;
-    left: -370px;
+    left: -380px;
     transition: 0.4s ease;
 }
 
 .menu:hover {
-    left: 0;
+    left: -50px;
     transition: 0.5s ease;
 }
 
 
 header {
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
     float:right;
     text-align: right;
     letter-spacing: 8px;
@@ -135,11 +140,9 @@ header {
 }
 
 .head_img  {
-    padding: 400px;
+    color: #b55d0b;
     float: left;
-    display: block;
-    margin: 0 auto;
-    width:25px;
+    width:30px;
     height: auto;
 }
 
@@ -160,13 +163,18 @@ header {
 }
 
 .main {
-    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+    /*font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;*/
     padding-left: 100px;
+    padding-top: 40px;
 }
 
 .home_img_roadmap{
 
-    float: right;
-    width:50%;
+    float: left;
+    width:60%;
     height: auto;
 }
+
+/*.info_text {*/
+/*    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;*/
+/*}*/
