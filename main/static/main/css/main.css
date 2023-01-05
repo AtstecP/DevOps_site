@@ -118,7 +118,7 @@ main {
     height: 100vh;
     border-right: 4px solid #111;
     position: fixed;
-    left: -380px;
+    left: -345px;
     transition: 0.4s ease;
 }
 
@@ -164,8 +164,7 @@ header {
 
 .main {
     /*font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;*/
-    padding-left: 100px;
-    padding-top: 40px;
+    padding: 40px 70px 40px 100px;
 }
 
 .home_img_roadmap{
