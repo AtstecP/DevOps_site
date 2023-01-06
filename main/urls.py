@@ -21,4 +21,5 @@ urlpatterns = [
     path('info', views.info, name='info'),
     path('geography', views.geography, name='geography'),
     path('vacancies', views.get_vacancies, name='vacancies'),
+    path('skills', views.skills, name='skills'),
 ]
