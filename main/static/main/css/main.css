@@ -118,7 +118,7 @@ main {
     height: 100vh;
     border-right: 4px solid #111;
     position: fixed;
-    left: -330px;
+    left: -345px;
     transition: 0.4s ease;
 }
 
@@ -130,7 +130,7 @@ main {
 
 header {
     font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
-    float:right;
+    float: right;
     text-align: right;
     letter-spacing: 8px;
     height: 6em;
@@ -139,10 +139,10 @@ header {
     color: #fff;
 }
 
-.head_img  {
+.head_img {
     color: #b55d0b;
     float: left;
-    width:30px;
+    width: 30px;
     height: auto;
 }
 
@@ -167,11 +167,23 @@ header {
     padding: 40px 70px 40px 100px;
 }
 
-.home_img_roadmap{
+.home_img_roadmap {
 
     float: left;
-    width:60%;
+    width: 60%;
     height: auto;
+}
+
+.skill_list a {
+    text-decoration: none;
+}
+
+.skill_list ul {
+    padding: 20px;
+}
+
+.skill_list {
+    padding: 0 30% 0 30%;
 }
 
 /*.info_text {*/

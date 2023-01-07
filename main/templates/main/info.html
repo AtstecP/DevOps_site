@@ -1,11 +1,13 @@
 {% extends 'main/mainpage.html' %}
 {% load static %}
 {% block content %}
-
-    <div>
+<div>
+<h3>Данные о вакансиях</h3>
+    <p style="font-size: 20px;">На графиках ниже представлены сравнения вакансии <strong style="color: #69BDBA">DevOps</strong> со <strong style="color: orange">средними показателями по IT</strong> сфере</p>
+    <div style="padding: 30px 10% 0 10%">
         <img width="48%"  src="{% static 'main/img/salary.png' %}"/>
         <img width="48%"  src="{% static 'main/img/quanity.png' %}"/>
     </div>
-
+</div>
 
 {% endblock %}
