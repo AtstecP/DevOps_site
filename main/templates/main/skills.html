@@ -1,30 +1,98 @@
 {% extends 'main/mainpage.html' %}
 {% load static %}
 {% block content %}
-
-    <div class="skill_list" >
-        <div>
-        <h2  class="text_block" style="text-align: center">Список самых популярных скилов</h2>
-
-            <ul class="list-group">
-                <a href="https://ru.wikipedia.org/wiki/Linux"><li class="list-group-item">Linux</li></a>
-                <a href="https://ru.wikipedia.org/wiki/Docker"><li class="list-group-item">Docker</li></a>
-                <a href="https://ru.wikipedia.org/wiki/PostgreSQL"><li class="list-group-item">PostgreSQL</li></a>
-                <a href="https://ru.wikipedia.org/wiki/Python"><li class="list-group-item">Python</li></a>
-                <a href="https://ru.wikipedia.org/wiki/Ansible"><li class="list-group-item">Ansible</li></a>
-                <a href="https://ru.wikipedia.org/wiki/MySQL"><li class="list-group-item">MySQL</li></a>
-                <a href="https://ru.wikipedia.org/wiki/Java"><li class="list-group-item">Java</li></a>
-                <a href="https://ru.wikipedia.org/wiki/Amazon_Web_Services"><li class="list-group-item">AWS</li></a>
-                <a href="https://ru.wikipedia.org/wiki/Git"><li class="list-group-item">Git</li></a>
-                <a href="https://ru.wikipedia.org/wiki/Zabbix"><li class="list-group-item">Zabbix</li></a>
-                <a href="https://ru.wikipedia.org/wiki/Jenkins"><li class="list-group-item">Jenkins</li></a>
-                <a href="https://ru.wikipedia.org/wiki/Kubernetes"><li class="list-group-item">Kubernetes</li></a>
-                <a href="https://ru.wikipedia.org/wiki/CentOS"><li class="list-group-item">CentOS</li></a>
-                <a href="https://www.google.ru/search?q=Business English"><li class="list-group-item">Business English</li></a>
-                <a href="https://about.gitlab.com/"><li class="list-group-item">Gitlab</li></a>
-                <a href="https://ru.wikipedia.org/wiki/KVM"><li class="list-group-item">KVM</li></a>
-            </ul>
-        </div>
+    <div>
+        <h2 class="text_block" style="text-align: center; margin: 0 20% 0 20%">Список самых популярных скиллов</h2>
+    </div>
+    <div class="skill_list" style="text-align: center;">
+        <a href="https://ru.wikipedia.org/wiki/Linux">
+            <div>
+                <img class="skills_img" src="{% static 'main/img/lunix.png' %}" alt="linux">
+                <p>Linux</p>
+            </div>
+        </a>
+        <a href="https://ru.wikipedia.org/wiki/Docker">
+            <div>
+                <img class="skills_img" src="{% static 'main/img/docker.png' %}" alt="docker">
+                <p>Docker</p>
+            </div>
+        </a>
+        <a href="https://ru.wikipedia.org/wiki/PostgreSQL">
+            <div>
+                <img class="skills_img" src="{% static 'main/img/postgreSQL.png' %}" alt="PostgreSQL">
+                <p>PostgreSQL</p>
+            </div>
+        </a>
+        <a href="https://ru.wikipedia.org/wiki/Python">
+            <div>
+                <img class="skills_img" src="{% static 'main/img/python.png' %}" alt="Python">
+                <p>Python</p>
+            </div>
+        </a>
+        <a href="https://ru.wikipedia.org/wiki/Ansible">
+            <div>
+                <img class="skills_img" src="{% static 'main/img/ansible.png' %}" alt="Ansible">
+            </div>
+        </a>
+        <a href="https://ru.wikipedia.org/wiki/MySQL">
+            <div>
+                <img class="skills_img" src="{% static 'main/img/mySQL.png' %}" alt="MySQL">
+            </div>
+        </a>
+        <a href="https://ru.wikipedia.org/wiki/Amazon_Web_Services">
+            <div>
+                <img class="skills_img" src="{% static 'main/img/aws.png' %}" alt="AWS">
+            </div>
+        </a>
+        <a href="https://ru.wikipedia.org/wiki/Git">
+            <div>
+                <img class="skills_img" src="{% static 'main/img/git.png' %}" alt="Git">
+                <p>Git</p>
+            </div>
+        </a>
+        <a href="https://ru.wikipedia.org/wiki/Zabbix">
+            <div>
+                <img class="skills_img" src="{% static 'main/img/zabbix.png' %}" alt="Zabbix">
+            </div>
+        </a>
+        <a href="https://ru.wikipedia.org/wiki/Jenkins">
+            <div>
+                <img class="skills_img" src="{% static 'main/img/jenkins.jpeg' %}" alt="Jenkins">
+            </div>
+        </a>
+        <a href="https://ru.wikipedia.org/wiki/Kubernetes">
+            <div>
+                <img class="skills_img" src="{% static 'main/img/kubernetes.png' %}" alt="Kubernetes">
+                <p>Kubernetes</p>
+            </div>
+        </a>
+        <a href="https://ru.wikipedia.org/wiki/CentOS">
+            <div>
+                <img class="skills_img" src="{% static 'main/img/centOS.png' %}" alt="CentOS">
+            </div>
+        </a>
+        <a href="https://www.google.ru/search?q=Business English">
+            <div>
+                <img class="skills_img" src="{% static 'main/img/english.png' %}" alt="CentOS">
+                <p>Business English</p>
+            </div>
+        </a>
+        <a href="https://about.gitlab.com/">
+            <div>
+                <img class="skills_img" src="{% static 'main/img/gitlab.png' %}" alt="Gitlab">
+                <p>Gitlab</p>
+            </div>
+        </a>
+        <a href="https://ru.wikipedia.org/wiki/KVM">
+            <div>
+                <img class="skills_img" src="{% static 'main/img/kvm.png' %}" alt="KVM">
+            </div>
+        </a>
+        <a href="https://ru.wikipedia.org/wiki/Java">
+            <div>
+                <img class="skills_img" src="{% static 'main/img/java.png' %}" alt="Java">
+            </div>
+        </a>
     </div>
 
 

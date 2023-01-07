@@ -3,23 +3,25 @@
 {% block content %}
 
 
-        <h3 class="text_block" style="text-align: center"> Последние вакансии</h3>
+    <h3 class="text_block" style="text-align: center;"> Последние вакансии</h3>
     <br>
     <div id="accordion">
         {% for vacancy in vacancies %}
-                <div class="card" style=" border-radius: 20px; position: static" >
-                    <div class="card-header" id="headvacancy{{forloop.counter }}">
-                        <h5 class="mb-0" >
-                            <button class="btn btn-link" data-toggle="collapse"
-                                    data-target="#vacancy{{forloop.counter }}"
-                                            aria-expanded="true" aria-controls="vacancy{{forloop.counter }}" style="text-decoration: none; color: black">
-                                <h6 class="text_block" >{{ vacancy.name }}</h6>
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="vacancy{{forloop.counter }}" class="collapse" aria-labelledby="headvacancy{{forloop.counter }}" data-parent="#accordion">
+            <div class="card" style="; position: static; ">
+                <div class="card-header" style="background: none" id="headvacancy{{ forloop.counter }} ">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse"
+                                data-target="#vacancy{{ forloop.counter }}"
+                                aria-expanded="true" aria-controls="vacancy{{ forloop.counter }}"
+                                style="text-decoration: none; color: black">
+                            <h6 class="text_block">{{ vacancy.name }}</h6>
+                        </button>
+                    </h5>
+                </div>
+                <div id="vacancy{{ forloop.counter }}" class="collapse"
+                     aria-labelledby="headvacancy{{ forloop.counter }}" data-parent="#accordion">
                     <div class="card-body">
-                        <div class="text_block" style="font-size: 17px ">
+                        <div class="text_block" style="font-size: 17px;padding-top: 0 ">
                             <br>
                             <p><b>Зарплата:</b> {{ vacancy.salary }}</p>
                             <p><b>Описание:</b></p>
