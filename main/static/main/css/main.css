@@ -4,63 +4,6 @@ body {
     min-height: 100%;
 }
 
-/*
-.list_menu {
-    float: left;
-    background: #69BDBA;
-    width: 15%;
-    padding: 2.5%;
-    height: 100vh;
-    color: #111;
-    border-right: 5px solid #0B0C10;
-    left: -100px;
-}
-
-.link {
-    text-decoration: none;
-}
-
-.list_menu img {
-    display: block;
-    margin: 0 auto;
-    width: 150px;
-    height: auto;
-}
-
-.list_menu h3 {
-    color: #111;
-    margin-top: 50px;
-    font-size: 30px
-}
-
-.list_menu a {
-    color: #111;
-    text-decoration: none;
-}
-
-.list_menu ul {
-    list-style: none;
-}
-
-main {
-    text-align: center;
-}
-
-.list_menu li {
-    font-weight: 500;
-    font-size: 20px;
-    color: #111;
-    display: block;
-    margin-top: 20px;
-    transition: transform .6s ease;
-}
-
-.list_menu ul li:hover, aside ul a:hover {
-    color: #AC3B61;
-    text-decoration: none;
-    transform: scale(1.05);
-}
-*/
 
 .list_menu ul {
     padding-top: 100px;
@@ -168,9 +111,9 @@ header {
 }
 
 .home_img_roadmap {
-
-    float: left;
-    width: 60%;
+    padding-top: 70px;
+    float: right;
+    width: 39%;
     height: auto;
 }
 
@@ -184,6 +127,12 @@ header {
 
 .skill_list {
     padding: 0 30% 0 30%;
+}
+
+.text_block{
+    background: #c3e4e3;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 /*.info_text {*/

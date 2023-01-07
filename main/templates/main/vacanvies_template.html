@@ -2,20 +2,23 @@
 {% load static %}
 {% block content %}
     <div>
+        <h1 class="text_block"> Последние вакансии</h1>
         {% for vacancy in vacancies %}
-            <div>
+            <div class="text_block">
                 <h2>{{ vacancy.name }}</h2>
                 <br>
                 <p><b>Зарплата:</b> {{ vacancy.salary }}</p>
-                <p>{{ vacancy.description|safe }}</p>
+                <p><b>Описание:</b></p>
+                <div style="padding-left:3%;">
+                    <p>{{ vacancy.description|safe }}</p>
+                </div>
                 <p><b>Навыки:</b> {{ vacancy.key_skills}}</p>
                 <p><b>Компания:</b> {{ vacancy.employer}}</p>
                 <p><b>Расположение:</b> {{ vacancy.address }}</p>
                 <p><b>Дата публикации:</b> {{ vacancy.published_at}}</p>
-                <a href={{ vacancy.url }}>Страница на HH.ru</a>
-                <hr>
-
+                <a style="color: orange" href={{ vacancy.url }}><strong>Страница на HH.ru</strong></a>
             </div>
+            <br>
         {% endfor %}
     </div>
 {% endblock %}
