@@ -18,7 +18,7 @@ def geography(request):
 
 
 def vacancies(request):
-    #add_vacancies()
+    add_vacancies()
     return render(request, 'main/vacanvies_template.html',
                   context={'vacancies': VacancyModel.objects.order_by('-published_at')[:10], })
 

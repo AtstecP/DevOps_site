@@ -17,7 +17,7 @@ def set_vacancyModels(vacancies):
                 published_at=vacancy['published_at'],
                 description=vacancy['description'],
                 key_skills=vacancy['key_skills'],
-                address=vacancy['area'],
+                address=vacancy['address']['city'],
                 url=vacancy['alternate_url'],
                 employer=vacancy['employer']['name'],
                 salary=vacancy['salary'], )
