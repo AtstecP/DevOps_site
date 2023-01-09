@@ -14,7 +14,10 @@
                                 data-target="#vacancy{{ forloop.counter }}"
                                 aria-expanded="true" aria-controls="vacancy{{ forloop.counter }}"
                                 style="text-decoration: none; color: black">
-                            <h6 class="text_block">{{ vacancy.name }}</h6>
+                            <div class="text_block">
+                                <h6>{{ vacancy.name }}</h6>
+                                <p><b>Зарплата:</b> {{ vacancy.salary }}</p>
+                            </div>
                         </button>
                     </h5>
                 </div>
@@ -23,7 +26,6 @@
                     <div class="card-body">
                         <div class="text_block" style="font-size: 17px;padding-top: 0 ">
                             <br>
-                            <p><b>Зарплата:</b> {{ vacancy.salary }}</p>
                             <p><b>Описание:</b></p>
                             <div style="padding-left:3%;">
                                 <p>{{ vacancy.description|safe }}</p>

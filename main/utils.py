@@ -17,7 +17,7 @@ def set_vacancyModels(vacancies):
                 published_at=vacancy['published_at'],
                 description=vacancy['description'],
                 key_skills=vacancy['key_skills'],
-                address=vacancy['address']['city'],
+                address=vacancy['area'] if vacancy['address'] is None else vacancy['address']['city'],
                 url=vacancy['alternate_url'],
                 employer=vacancy['employer']['name'],
                 salary=vacancy['salary'], )
@@ -42,10 +42,20 @@ def clean_vacancy(vacancy):
     return vacancy
 
 
+def get_api():
+    params = {
+        'text': 'devops',
+        'specialization': 1,
+        'page': 1,
+        'per_page': 100,
+    }
+    return requests.get('https://api.hh.ru/vacancies', params).json()
+
+
 def get_vacancies():
     try:
         data = []
-        info = requests.get('https://api.hh.ru/vacancies?text=%22devops%22&specialization=1&per_page=100').json()
+        info = get_api()
         for row in info['items']:
             if row['name'].lower().__contains__('devops') and not row['salary'] is None:
                 data.append({'id': row['id'], 'published_at': row['published_at']})

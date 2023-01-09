@@ -7,6 +7,7 @@
 
 ![img.png](static/img/info_page.png)
 
+
 ![img.png](static/img/geography_page.png)
 
 ![img.png](static/img/skills_page.png)

@@ -2,8 +2,9 @@
 {% load static %}
 {% block content %}
     <div>
-        <h2 class="text_block" style="text-align: center; margin: 0 20% 0 20%">Список самых популярных скиллов</h2>
+    {{ skillspage.text|safe }}
     </div>
+
     <div class="skill_list" style="text-align: center;">
         <a href="https://ru.wikipedia.org/wiki/Linux">
             <div>

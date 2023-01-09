@@ -1,20 +1,41 @@
 from django.shortcuts import render
-from .models import VacancyModel
+from .models import VacancyModel, HomePage, InfoPage, SkillsPage, GeographyPage
 from .utils import add_vacancies
 
 
 # Create your views here.
 
 def home(request):
-    return render(request, 'main/home.html')
+    homepage = HomePage.objects.all()[0]
+    return render(
+        request,
+        'main/home.html',
+        context={
+            'homepage': homepage,
+        }
+    )
 
 
 def info(request):
-    return render(request, 'main/info.html')
+    infopage = InfoPage.objects.all()[0]
+    return render(
+        request,
+        'main/info.html',
+        context={
+            'infopage': infopage,
+        }
+    )
 
 
 def geography(request):
-    return render(request, 'main/geography.html')
+    geographypage = GeographyPage.objects.all()[0]
+    return render(
+        request,
+        'main/geography.html',
+        context={
+            'geographypage': geographypage,
+        }
+    )
 
 
 def vacancies(request):
@@ -24,6 +45,13 @@ def vacancies(request):
 
 
 def skills(request):
-    return render(request, 'main/skills.html')
+    skillspage = SkillsPage.objects.all()[0]
+    return render(
+        request,
+        'main/skills.html',
+        context={
+            'skillspage':skillspage,
+        }
+    )
 
 

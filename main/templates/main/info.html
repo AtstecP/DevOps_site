@@ -2,12 +2,10 @@
 {% load static %}
 {% block content %}
     <div>
-        <div class="text_block"><h3>Данные о вакансиях</h3>
-            <p style="font-size: 20px;">На графиках ниже представлены сравнения вакансии DevOps со средними показателями по ITсфере</p>
-        </div>
+        {{ infopage.text|safe }}
         <div style="padding: 30px 10% 0 10%">
-            <img width="48%" src="{% static 'main/img/salary.png' %}"/>
-            <img width="48%" src="{% static 'main/img/quanity.png' %}"/>
+            <img width="48%" src="{{ infopage.graph_left.url }}"/>
+            <img width="48%" src="{{ infopage.graph_right.url }}"/>
         </div>
     </div>
 
