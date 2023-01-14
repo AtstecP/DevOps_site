@@ -120,6 +120,7 @@ header {
     width: 100%;
     color: #111111;
     text-align: center;
+
 }
 .skill_list a{
     color: #111111;
@@ -145,6 +146,11 @@ header {
 
 .skills_img{
     width: 100%;
+}
+
+.skills_img {
+    width: 100%;
+    margin-top: 50px;
 }
 
 .text_block{

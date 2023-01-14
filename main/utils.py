@@ -17,7 +17,7 @@ def set_vacancyModels(vacancies):
                 published_at=vacancy['published_at'],
                 description=vacancy['description'],
                 key_skills=vacancy['key_skills'],
-                address=vacancy['area'] if vacancy['address'] is None else vacancy['address']['city'],
+                address=vacancy['area'],
                 url=vacancy['alternate_url'],
                 employer=vacancy['employer']['name'],
                 salary=vacancy['salary'], )
@@ -25,6 +25,8 @@ def set_vacancyModels(vacancies):
 
 
 def clean_vacancy(vacancy):
+    vacancy['published_at'] = vacancy['published_at'].replace('T', ' ')
+    vacancy['key_skills'] = ', '.join(map(lambda x: x['name'], vacancy['key_skills']))
     vacancy['area'] = vacancy['area']['name'] if vacancy['area'].__contains__('name') else 'Нет данных'
     if vacancy['salary']['from'] != None and vacancy['salary']['to'] != None and vacancy['salary']['from'] != \
             vacancy['salary']['to']:
@@ -38,7 +40,6 @@ def clean_vacancy(vacancy):
             'salary'] = f"{'{0:,}'.format(vacancy['salary']['to']).replace(',', ' ')} {vacancy['salary']['currency']}"
     else:
         vacancy['salary'] = 'Нет данных'
-    vacancy['key_skills'] = ', '.join(map(lambda x: x['name'], vacancy['key_skills']))
     return vacancy
 
 

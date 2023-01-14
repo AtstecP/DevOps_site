@@ -4,9 +4,13 @@
 
 
     <div style="text-align: center">
-        {{ geographypage.text_1|safe }}
-        {{ geographypage.table_1|safe }}
         {{ geographypage.text_2|safe }}
         {{ geographypage.table_2|safe }}
+        <img style="width: 70%" src="{{ geographypage.graph_devops.url }}" alt="homepage_img">
+        <div style="padding-top: 5%">
+            {{ geographypage.text_1|safe }}
+            {{ geographypage.table_1|safe }}
+            <img style="width: 70%" src="{{ geographypage.graph_IT.url }}" alt="homepage_img">
+        </div>
     </div>
 {% endblock %}

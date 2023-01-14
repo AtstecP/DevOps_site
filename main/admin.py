@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import VacancyModel, InfoPage, GeographyPage, SkillsPage
-from .models import HomePage
+from .models import VacancyModel, InfoPage, GeographyPage, SkillsPage, HomePage
 
 
 # Register your models here.

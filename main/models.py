@@ -49,6 +49,7 @@ class InfoPage(models.Model):
         default='infopage'
     )
     text = models.TextField('Текст', default=None)
+    table = models.TextField('Таблица', default=None)
     graph_left = models.ImageField(
         'Левый график',
         default=None,
@@ -71,7 +72,16 @@ class GeographyPage(models.Model):
     text_2 = models.TextField('Второй заголовок', default=None)
     table_1 = models.TextField('Таблицы для IT', default=None)
     table_2 = models.TextField('Таблицы для DevOps', default=None)
-
+    graph_IT = models.ImageField(
+        'IT график',
+        default=None,
+        upload_to='geographypage'
+    )
+    graph_devops = models.ImageField(
+        'DevOps график',
+        default=None,
+        upload_to='geographypage'
+    )
 
 
 class SkillsPage(models.Model):
@@ -79,5 +89,12 @@ class SkillsPage(models.Model):
         'Заголовок',
         max_length=100,
         default='skillsPage'
+    )
+    graph = models.ImageField(
+        'график',
+        default=None,
+        blank=True,
+        null=True,
+        upload_to='geographypage'
     )
     text = models.TextField('Текст', default=None)
