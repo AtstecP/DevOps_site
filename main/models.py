@@ -95,6 +95,7 @@ class SkillsPage(models.Model):
         default=None,
         blank=True,
         null=True,
-        upload_to='geographypage'
+        upload_to='skillspage'
     )
     text = models.TextField('Текст', default=None)
+
